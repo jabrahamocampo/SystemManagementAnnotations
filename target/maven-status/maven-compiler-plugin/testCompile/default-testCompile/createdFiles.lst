@@ -1,0 +1,3 @@
+com\system\serviceimpt\test\SimpleProductManagerTest.class
+com\system\controller\test\InventoryControllerTest.class
+com\system\domain\test\ProductTest.class

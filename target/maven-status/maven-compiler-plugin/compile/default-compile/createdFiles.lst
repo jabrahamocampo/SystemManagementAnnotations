@@ -1,0 +1,9 @@
+com\system\domain\PriceIncrease.class
+com\system\controller\StudentController.class
+com\system\controller\PriceIncreaseFormController.class
+com\system\serviceimpl\PriceIncreaseValidatorImpl.class
+com\system\serviceimpl\SimpleProductManagerBO.class
+com\system\domain\Product.class
+com\system\controller\InventoryController.class
+com\system\service\ProductManager.class
+com\system\domain\Student.class
