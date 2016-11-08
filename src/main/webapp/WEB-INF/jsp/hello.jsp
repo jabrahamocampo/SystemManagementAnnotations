@@ -11,7 +11,15 @@
 	</c:forEach>
 	
 	<br>
-<a href="<c:url value="priceincrease.htm"/>">Increase Prices</a>
+<a href="<c:url value="increaseForm"/>">Increase Prices</a>
+<br>
+<c:out value="${test}" />
+<b>${requestParam.test} </b>
+<b>${model.requestParam.test} </b>
+<br>
+<c:out value="${increase}" />
+<b>${requestParam.increase}</b>
+<b>${model.requestParam.increase} </b>
 <br>
 </body>
 </html>

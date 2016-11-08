@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,11 +38,20 @@ public class InventoryController {
 	protected final Log logger = LogFactory.getLog(getClass());
 	
 	@RequestMapping(method = RequestMethod.GET)
-	public ModelAndView requestHandler(ModelMap model){
+	public ModelAndView requestHandler(HttpServletRequest request, HttpServletResponse response, ModelMap model){
 		
 		logger.info(model.getClass().getName() + "*****PASA******");
 		
 		Map<String, Object> map = new HashMap<String, Object>();
+		
+		if(request.getParameter("test")!=null && request.getParameter("increase")!=null){
+			model.addAttribute("test", request.getParameter("test"));
+			model.addAttribute("increase", request.getParameter("increase"));
+			map.put("requestParam", model);
+			
+			map.put("test", request.getParameter("test"));
+			map.put("increase", request.getParameter("increase"));
+		}
 		
 		String now = (new Date()).toString();
 		map.put("now", now);

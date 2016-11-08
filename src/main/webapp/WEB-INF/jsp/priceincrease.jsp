@@ -10,7 +10,7 @@
 </head>
 <body>
 	<h1><fmt:message key="priceincrease.heading"/></h1>
-	<form:form method="post" commandName="priceIncrease">
+	<form:form method="POST" action="/SystemManagementAnnotations/priceIncreaseFormController">
 		<table width="95%" bgcolor="f8f8ff" border="0" cellspacing="0" cellpadding="5">
 			<tr>
 				<td align="right" width="20%">Increase (%):</td>
@@ -21,6 +21,6 @@
 		<br>
 		<input type="submit" align="center" value="Execute">
 	</form:form>
-	<a href="<c:url value="hello.htm"/>">Home</a>
+	<a href="<c:url value="hello"/>">Home</a>
 </body>
 </html>

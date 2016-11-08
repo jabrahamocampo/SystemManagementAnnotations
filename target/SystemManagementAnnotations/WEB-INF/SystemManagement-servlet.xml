@@ -40,6 +40,7 @@
       	<property name="price" value="22.75"/>
       </bean>
       
+      <!-- 
       <bean name="/priceincrease" class="com.system.controller.PriceIncreaseFormController">
       	<property name="sessionForm" value="true"/>
       	<property name="commandName" value="priceIncrease"/>
@@ -51,6 +52,7 @@
       	<property name="successView" value="hello" />
       	<property name="productManager" ref="productManager"/>
       </bean>
+       -->
       
       <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
 		<property name="basename" value="messages"/>
